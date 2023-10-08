@@ -1,65 +1,84 @@
 @import 'variables.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap'); */
-@import '/css/style.css';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+  
 
 }
-@media (min-device-width: 750px) 
-and (max-device-width: 1280px) {
-body{
-    background-color: brown;
-}
-    
+@media (min-width: 750px) and (max-width: 1024px){
+   
 header{
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: 50px 50px 100px 200fr;
-justify-content: center;
-margin-bottom: 7rem;
+    background-color: cadetblue;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin:0rem;
+    justify-content: center;
+    height: 375px;
+   
 }
 #navbar{
-    display: grid;
-    grid-column:3/5;
-    grid-row: 3/4;
- }  
-ul{
-    display:flex;
-    background-color: var(--red);
-    height: 4rem;
-    flex-direction:row;
-    justify-content: center;
+  
+  display:flex;
+    flex-direction:column;
     align-items: center;
-    border-radius: 2rem;
-    width: fit-content;
+    justify-content: center;
+    margin-left: -30rem; 
+    margin-top: 18rem;
+
    
 
 }
 
- a{
+ #navbar ul a{
     display: flex;
     justify-content:space-around;
-    margin: 3rem;
+ /*    margin: 3rem; */
     text-decoration: none; 
     font-family:var(--roboto_font);
-    color: var(--white);
+    color: var(--red);
 }
-li{
+
+#navbar ul li{
    list-style: none;
 }
 
+#navbar ul{
+    display:flex;
+    background-color: var(--red);
+   /*  height: 4rem; */
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+   /*  width: fit-content; */
+
+
+
+}
 .logo{
-    margin: 1rem;
+  
+    display:grid;
+    grid-column: 2/4;
+    grid-row: 3/3;
+    margin: 1px;
     width: 350px;
 }
-.hamburger, .close{
+.hamburger{
     display: none;
 
 }
-
+.close{
+    display: none;
+}
+a.csr-only{
+    display: none;
+}
 
 
   
@@ -82,9 +101,13 @@ h1{
 .grid{
     display:grid;
     grid-template-columns: repeat(6, 200px);
-    grid-template-rows: repeat(6, 200px);
+    grid-template-rows: repeat(10, 200px);
     justify-content: center; 
-    overflow: hidden;
+    /* overflow: hidden; */
+    background-color: aqua;
+    min-width: 550px;
+    max-width: 850px;
+ 
   
 
 
@@ -92,9 +115,9 @@ h1{
 .mainimg{
     display: grid;
     grid-column: 1/5;
-    grid-row: 1/5;
+    grid-row: 5/5;
     width: 100%;
-    margin-left: 10rem;
+   /*  margin-left: 10rem; */
 }
 
 img[alt="Robot sayings."] {
@@ -105,7 +128,7 @@ img[alt="Robot sayings."] {
 
 .secondimg{
     display: grid;
-    grid-column: 4/7;
+    grid-column: 1/6;
     grid-row: 1/4;
     margin-left: 6rem;
  
@@ -121,7 +144,7 @@ img[alt="Black apron with Bubbles."] {
 
 .products{
     display: grid;
-    grid-row: 5/7;
+    grid-row: 6/7;
     grid-column:1/5;
     margin-left: 10rem;
    
@@ -183,14 +206,14 @@ h2{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 1200px;
+    min-width: 550px;
+    max-width: 850px;
     height: 100%;
     gap: 1rem;
     margin: 5rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
 
-   }
+
+  
 
 li{
     display: flex;
@@ -204,7 +227,7 @@ li{
     font-family: var(--roboto_font);
     background: linear-gradient(0deg, rgba(254,206,122,1) 0%, rgba(255,246,207,1) 100%);
 }
-
+}
 .row:last-child{
 display: flex;
 justify-content: space-between;
