@@ -1,0 +1,15 @@
+
+
+:root{
+    --blue:#00BFF3;
+    --red:#FF715B;
+    --yellow:#F0C808;
+    --dark_gray:#4C5B5C;
+    --roboto_font:'Roboto', sans-serif;
+    --lighter_colour: #fff6cf;
+    --darker_colour:#fece7a;
+    --white:#f5f5f5;
+   /*  --background_gradient_robot: linear-gradient(180deg, var(--lighter_colour) 0%,var(--darker_colour) 100%);
+   */
+
+}
