@@ -1,0 +1,230 @@
+@import 'variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
+ * {
+        box-sizing: border-box;
+        font-size: var(--roboto_font);
+      }
+
+@media (max-width: 750px){
+   
+header{
+margin-bottom: 9rem;
+    .hamburger {
+      position: absolute;
+      right: 1rem;
+      top: 20px;
+      color: white;
+      font-size: 10px;
+      font-family: var(--roboto_font);
+    }
+  }
+  
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--blue);
+}
+#navbar{
+z-index: 30;
+position: fixed;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #f2f1f1;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  a {
+    display: block;
+    background: var(--dark_gray)/* linear-gradient(#3E3E3E, #383838) */;
+    border-top: 1px solid #484848;
+    border-bottom: 1px solid #2E2E2E var(--blue);
+    color:var(--white);
+    font-family: var(--roboto_font);
+    padding: 15px;
+    &:hover, &:focus {
+      background: linear-gradient(#484848, #383838);
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 34px;
+    background: linear-gradient(left, rgba(black, 0), rgba(black, 0.4));
+  }
+}
+
+#navbar ul li a:hover{
+    color: var(--blue);
+}
+.close{
+    display: none;
+}
+.close {
+    display: block;
+   
+ }
+ .close img{ 
+    margin-left: 10rem;
+    width: 2rem;
+    height: 2rem;
+   
+ }
+.close .sr-only:hover{
+    color: var(--blue);
+}
+
+#navbar:target{
+    width: 50%;
+
+}
+#navbar:target + header {
+    width: 80%;
+    .hamburger {
+       display: flex; 
+    }
+    header {
+        width: 80%;
+        right: 20%;
+      }
+}
+
+
+
+
+/* final del menu burger */
+
+
+
+
+.logo{
+    width:50%;
+    height: 150px;
+    margin-left: 5rem;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    font-size:3rem;
+    color: var(--red);
+    font-family: var(--roboto_font);
+   /*  overflow: hidden; */
+   
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.grid figure{
+    margin: 1rem;
+    
+} 
+.grid figure a{
+    margin: 10px;
+     font-size:x-large;
+     background-color: var(--white);
+     opacity: 0.6;
+     padding: 2rem; 
+     margin-bottom: 0;
+     color: var(--blue);
+     text-decoration: none;
+     text-align: center;
+ }
+
+.grid figcaption {
+      height: 2rem;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-top: -5rem;  
+   
+}
+
+.products{
+    margin-top:3rem;
+}
+
+
+    h2{
+        margin-top: 10rem;
+        display:flex;
+        justify-content: center;
+        font-size:3rem;
+        color: var(--red);
+        font-family: var(--roboto_font);
+       /*  overflow: hidden; */
+       
+    } 
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;   
+    }
+      .row{
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          justify-items: center;
+        
+          height: 100%;
+          gap: 1rem;
+          margin: 5rem;
+          padding: 20px;
+      }
+      
+        .row li{
+          display: flex;
+          justify-content: space-between;
+          text-align: center;
+          color: var(--red);
+          background-color: var(--background_gradient_robot);
+          border-radius: 50%;
+          padding: 2rem;
+          margin-top: 2rem;
+          font-family: var(--roboto_font);
+          background: linear-gradient(0deg, rgba(254,206,122,1) 0%, rgba(255,246,207,1) 100%);
+      
+      }
+      .row:last-child{
+      display: flex;
+      justify-content: space-between;
+      }
+      
+      
+      img{
+          display:flex;
+          width:100%;
+          object-fit: cover;
+          margin-top: 2rem;
+        
+       }
+      
+      
+      
+      footer{
+          display:flex;
+          justify-content: center;
+          flex-direction: row;
+          background-image: url(/img/lil-bv-bkgd.jpg);
+           height:300px; 
+          width: 100%;
+       
+          overflow: hidden;
+          font-size: large;
+      }
+      footer p{
+          font-family: var(--roboto_font);
+          margin-top: 5rem;
+          
+      }
+
+
+}
