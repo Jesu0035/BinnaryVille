@@ -82,7 +82,7 @@ h1{
     font-size:3rem;
     color: var(--red);
     font-family: var(--roboto_font);
-   /*  overflow: hidden; */
+   
    
 } 
 
@@ -99,7 +99,7 @@ h1{
     grid-column: 1/5;
     grid-row: 5/9;
     
-   /*  margin-left: 10rem; */
+  
 }
 
 img[alt="Robot sayings."] {
@@ -126,7 +126,7 @@ img[alt="Black apron with Bubbles."] {
     display: grid;
     grid-row: 11/13;
     grid-column:1/5;
- /*    margin-left: 10rem; */
+
    
 }
 img[alt="Our products."] {
@@ -150,7 +150,7 @@ img[alt="Our products."] {
     flex-direction: column;
     justify-content: center;
     margin-top: -5rem; 
-   /*  color: var(--blue); */
+   
     
 }
 .grid figure{
@@ -227,7 +227,7 @@ footer{
     display:flex;
     justify-content: center;
     flex-direction: row;
-    background-image: url(/img/lil-bv-bkgd.jpg);
+    background-image: url(img/lil-bv-bkgd.jpg);
     height:500px;
     width: 100%;
     overflow: hidden;
