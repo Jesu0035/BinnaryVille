@@ -32,18 +32,18 @@ position: fixed;
   top: 0;
   width: 0;
   height: 100%;
-  background: #f2f1f1;
+/*   background: #f2f1f1; */
   overflow-y: auto;
   transition: width 0.3s ease;
 }
 #navbar a{
     display: block;
-    background: var(--dark_gray)/* linear-gradient(#3E3E3E, #383838) */;
+    justify-content: center;  background: var(--dark_gray)/* linear-gradient(#3E3E3E, #383838) */;
     border-top: 1px solid #484848;
     border-bottom: 1px solid #2E2E2E var(--blue);
     color:var(--white);
     font-family: var(--roboto_font);
-    padding: 15px;
+    padding: 20px;
     &:hover, &:focus {
       background: linear-gradient(#484848, #383838);
     }
@@ -61,6 +61,7 @@ position: fixed;
 #navbar ul li a:hover{
     color: var(--blue);
 }
+
 .close{
     display: none;
 }
@@ -69,13 +70,24 @@ position: fixed;
    
  }
  .close img{ 
-    margin-left: 10rem;
+    margin-top: -3rem;
+    margin-left: 9rem;
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
    
  }
+ 
 .close .sr-only:hover{
     color: var(--blue);
+    
+}
+.close .sr-only {
+   display: flex;
+   flex-direction: row ;
+   height: 3rem;
+  
+    
 }
 
 #navbar:target{
