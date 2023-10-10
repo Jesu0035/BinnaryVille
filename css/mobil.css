@@ -206,7 +206,7 @@ h1{
           display:flex;
           justify-content: center;
           flex-direction: row;
-          background-image: url(img/lil-bv-bkgd.jpg);
+          background-image: url(../img/lil-bv-bkgd.jpg);
            height:300px; 
           width: 100%;
        
