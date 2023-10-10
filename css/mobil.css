@@ -9,7 +9,8 @@
    
 header{
 margin-bottom: 9rem;
-    .hamburger {
+}
+header .hamburger {
       position: absolute;
       right: 1rem;
       top: 20px;
@@ -17,7 +18,7 @@ margin-bottom: 9rem;
       font-size: 10px;
       font-family: var(--roboto_font);
     }
-  }
+  
   
 a{
     text-decoration: none;
@@ -34,7 +35,8 @@ position: fixed;
   background: #f2f1f1;
   overflow-y: auto;
   transition: width 0.3s ease;
-  a {
+}
+#navbar a{
     display: block;
     background: var(--dark_gray)/* linear-gradient(#3E3E3E, #383838) */;
     border-top: 1px solid #484848;
@@ -55,7 +57,6 @@ position: fixed;
     width: 34px;
     background: linear-gradient(left, rgba(black, 0), rgba(black, 0.4));
   }
-}
 
 #navbar ul li a:hover{
     color: var(--blue);
@@ -218,6 +219,11 @@ h1{
           margin-top: 5rem;
           
       }
-
+    
 
 }
+
+
+
+
+ 
